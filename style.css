@@ -6,5 +6,158 @@
 }
 
 nav {
+    position: fixed;
+    width: 100%;
+
+    min-height: 75px;
+    justify-content: flex-end;
+    display: flex;
+
+    background: #ffbdbd;
+    box-shadow: 0 0 5000px 0px rgb(116, 99, 99)
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-end;
+    margin-right: 30px;
+
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 18px;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: black;
+    align-content: flex-end;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* SECTION WELCOME */
+
+#welcome-section {
+    height: 100vh;
+    width: 100%;
+    background-color: rosybrown;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#welcome-section > h1 {
+    font-size: 70px;
+    color: white;
+}
+
+#welcome-section > p {
+    font-style: italic;
+    color: white;
+}
+
+/* SECTION PROJECTS */
+
+#projects {
+    text-align: center;
+    background-color: rosybrown ;
+    height: 100vh;
+}
+
+.header-projects > h2 {
+    padding: 20px 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+    width: 100%;
+    color: white;
+    background-color: #ffbdbd;
+}
+
+.container-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
     
+    padding: 20px;
+}
+
+.project {
+    height: 300px;
+}
+
+.project > a {
+    text-decoration: none;
+}
+
+.img-project {
+    height: calc(100% - 6.8rem);
+    object-fit: cover;
+}
+
+.project-tile {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4srem;
+}
+
+/* SECTION CONTACT */
+
+#contact {
+    text-align: center;
+    height: 25vh;
+    background-color: rosybrown;
+}
+
+.contact-title {
+    background-color: #ffbdbd;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.8rem;
+}
+
+.contact-container {
+    background-color: rosybrown;
+    padding-top: 50px;
+}
+
+.contact-links {    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    justify-content: space-evenly;
+}
+
+.fab {
+    color: white;
+}
+
+#profile-link,
+.profile-link {
+    text-decoration: none;
+    color: white;
+    padding: 0 60px;
+    font-size: 1.5em;
+}
+
+@media (max-width: 28.75em) {
+    .nav {
+    justify-content: center;
+    }
+
+    .nav-list {
+        margin: 0 1rem;
+    }
 }
